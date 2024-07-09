@@ -17,11 +17,11 @@ const Post = props => {
     <>
       <section className="post">
         <div className="arrows">
-          <button>↑</button>
+          <button onClick={updateVote}>↑</button>
           <span className="center">
             {props.post.upVotes - props.post.downVotes}
           </span>
-          <button>↓</button>
+          <button onClick={updateVote}>↓</button>
         </div>
         <div className="post-body">
           <div className="author">Posted by {props.post.author}</div>
